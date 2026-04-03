@@ -1,0 +1,41 @@
+// ─── Class & Phân quyền ───────────────────────────────────────
+
+model Class {
+  id      String @id @default(cuid())
+  name    String // VD: "10A1", "11B2"
+  gradeId String
+
+  grade          Grade          @relation(fields: [gradeId], references: [id])
+  teacherClasses TeacherClass[]
+  studentClasses StudentClass[]
+  exams          Exam[]
+  flashcardSets  FlashcardSet[]
+
+  @@map("classes")
+}
+
+// Admin gán: giáo viên X dạy môn Y ở lớp Z
+model TeacherClass {
+  teacherId String
+  classId   String
+  subjectId String
+
+  teacher User    @relation(fields: [teacherId], references: [id])
+  class   Class   @relation(fields: [classId], references: [id])
+  subject Subject @relation(fields: [subjectId], references: [id])
+
+  @@id([teacherId, classId, subjectId])
+  @@map("teacher_classes")
+}
+
+// Học sinh thuộc lớp nào
+model StudentClass {
+  studentId String
+  classId   String
+
+  student User  @relation(fields: [studentId], references: [id])
+  class   Class @relation(fields: [classId], references: [id])
+
+  @@id([studentId, classId])
+  @@map("student_classes")
+}

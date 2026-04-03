@@ -1,0 +1,266 @@
+[
+  {
+    "name": "Nguyễn Văn An",
+    "email": "gv.toan1@eduassess.vn",
+    "subjects": [
+      "Toán"
+    ],
+    "address": "12 Lê Lợi, Quận 1, TP.HCM",
+    "dateOfBirth": "1980-03-15",
+    "sex": "MALE",
+    "phoneNumber": "0901234501"
+  },
+  {
+    "name": "Trần Thị Bình",
+    "email": "gv.toan2@eduassess.vn",
+    "subjects": [
+      "Toán"
+    ],
+    "address": "45 Nguyễn Huệ, Quận 1, TP.HCM",
+    "dateOfBirth": "1983-07-22",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234502"
+  },
+  {
+    "name": "Lê Văn Cường",
+    "email": "gv.toan3@eduassess.vn",
+    "subjects": [
+      "Toán"
+    ],
+    "address": "78 Đinh Tiên Hoàng, Bình Thạnh, TP.HCM",
+    "dateOfBirth": "1978-11-05",
+    "sex": "MALE",
+    "phoneNumber": "0901234503"
+  },
+  {
+    "name": "Phạm Thị Dung",
+    "email": "gv.toan4@eduassess.vn",
+    "subjects": [
+      "Toán"
+    ],
+    "address": "23 Lý Thường Kiệt, Quận 10, TP.HCM",
+    "dateOfBirth": "1985-04-18",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234504"
+  },
+  {
+    "name": "Hoàng Văn Đức",
+    "email": "gv.vatly1@eduassess.vn",
+    "subjects": [
+      "Vật lý"
+    ],
+    "address": "56 Trần Hưng Đạo, Quận 5, TP.HCM",
+    "dateOfBirth": "1979-09-12",
+    "sex": "MALE",
+    "phoneNumber": "0901234505"
+  },
+  {
+    "name": "Vũ Thị Hà",
+    "email": "gv.vatly2@eduassess.vn",
+    "subjects": [
+      "Vật lý"
+    ],
+    "address": "34 Nguyễn Trãi, Quận 5, TP.HCM",
+    "dateOfBirth": "1982-01-28",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234506"
+  },
+  {
+    "name": "Đặng Văn Hải",
+    "email": "gv.vatly3@eduassess.vn",
+    "subjects": [
+      "Vật lý"
+    ],
+    "address": "90 Cách Mạng Tháng 8, Quận 3, TP.HCM",
+    "dateOfBirth": "1986-06-03",
+    "sex": "MALE",
+    "phoneNumber": "0901234507"
+  },
+  {
+    "name": "Bùi Thị Hương",
+    "email": "gv.hoahoc1@eduassess.vn",
+    "subjects": [
+      "Hóa học"
+    ],
+    "address": "15 Hai Bà Trưng, Quận 1, TP.HCM",
+    "dateOfBirth": "1981-12-20",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234508"
+  },
+  {
+    "name": "Ngô Văn Khải",
+    "email": "gv.hoahoc2@eduassess.vn",
+    "subjects": [
+      "Hóa học"
+    ],
+    "address": "67 Võ Văn Tần, Quận 3, TP.HCM",
+    "dateOfBirth": "1984-08-14",
+    "sex": "MALE",
+    "phoneNumber": "0901234509"
+  },
+  {
+    "name": "Đinh Thị Lan",
+    "email": "gv.hoahoc3@eduassess.vn",
+    "subjects": [
+      "Hóa học"
+    ],
+    "address": "29 Pasteur, Quận 1, TP.HCM",
+    "dateOfBirth": "1987-02-07",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234510"
+  },
+  {
+    "name": "Lý Thị Linh",
+    "email": "gv.sinhhoc1@eduassess.vn",
+    "subjects": [
+      "Sinh học"
+    ],
+    "address": "43 Nam Kỳ Khởi Nghĩa, Quận 3, TP.HCM",
+    "dateOfBirth": "1980-05-30",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234511"
+  },
+  {
+    "name": "Phan Văn Long",
+    "email": "gv.sinhhoc2@eduassess.vn",
+    "subjects": [
+      "Sinh học"
+    ],
+    "address": "88 Điện Biên Phủ, Bình Thạnh, TP.HCM",
+    "dateOfBirth": "1983-10-16",
+    "sex": "MALE",
+    "phoneNumber": "0901234512"
+  },
+  {
+    "name": "Võ Thị Mai",
+    "email": "gv.sinhhoc3@eduassess.vn",
+    "subjects": [
+      "Sinh học"
+    ],
+    "address": "11 Xô Viết Nghệ Tĩnh, Bình Thạnh, TP.HCM",
+    "dateOfBirth": "1988-03-25",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234513"
+  },
+  {
+    "name": "Cao Văn Minh",
+    "email": "gv.lichsu@eduassess.vn",
+    "subjects": [
+      "Lịch sử"
+    ],
+    "address": "72 Lê Duẩn, Quận 1, TP.HCM",
+    "dateOfBirth": "1977-07-04",
+    "sex": "MALE",
+    "phoneNumber": "0901234514"
+  },
+  {
+    "name": "Dương Thị Nga",
+    "email": "gv.dialy@eduassess.vn",
+    "subjects": [
+      "Địa lý"
+    ],
+    "address": "38 Tôn Đức Thắng, Quận 1, TP.HCM",
+    "dateOfBirth": "1982-09-19",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234515"
+  },
+  {
+    "name": "Hồ Văn Nam",
+    "email": "gv.tiengAnh1@eduassess.vn",
+    "subjects": [
+      "Tiếng Anh"
+    ],
+    "address": "55 Nguyễn Bỉnh Khiêm, Quận 1, TP.HCM",
+    "dateOfBirth": "1981-04-11",
+    "sex": "MALE",
+    "phoneNumber": "0901234516"
+  },
+  {
+    "name": "Trịnh Thị Ngân",
+    "email": "gv.tiengAnh2@eduassess.vn",
+    "subjects": [
+      "Tiếng Anh"
+    ],
+    "address": "17 Phạm Ngọc Thạch, Quận 3, TP.HCM",
+    "dateOfBirth": "1984-12-08",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234517"
+  },
+  {
+    "name": "Lưu Văn Phong",
+    "email": "gv.tiengAnh3@eduassess.vn",
+    "subjects": [
+      "Tiếng Anh"
+    ],
+    "address": "63 Nguyễn Đình Chiểu, Quận 3, TP.HCM",
+    "dateOfBirth": "1986-08-22",
+    "sex": "MALE",
+    "phoneNumber": "0901234518"
+  },
+  {
+    "name": "Mai Thị Phương",
+    "email": "gv.tiengAnh4@eduassess.vn",
+    "subjects": [
+      "Tiếng Anh"
+    ],
+    "address": "91 Lê Văn Sỹ, Quận 3, TP.HCM",
+    "dateOfBirth": "1989-01-15",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234519"
+  },
+  {
+    "name": "Nghiêm Văn Quân",
+    "email": "gv.tiengAnh5@eduassess.vn",
+    "subjects": [
+      "Tiếng Anh"
+    ],
+    "address": "26 Trương Định, Quận 3, TP.HCM",
+    "dateOfBirth": "1983-06-30",
+    "sex": "MALE",
+    "phoneNumber": "0901234520"
+  },
+  {
+    "name": "Tô Thị Quỳnh",
+    "email": "gv.nguvan1@eduassess.vn",
+    "subjects": [
+      "Ngữ văn"
+    ],
+    "address": "48 Bà Huyện Thanh Quan, Quận 3, TP.HCM",
+    "dateOfBirth": "1979-11-27",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234521"
+  },
+  {
+    "name": "Vương Văn Sơn",
+    "email": "gv.nguvan2@eduassess.vn",
+    "subjects": [
+      "Ngữ văn"
+    ],
+    "address": "82 Đoàn Thị Điểm, Quận Phú Nhuận, TP.HCM",
+    "dateOfBirth": "1982-03-14",
+    "sex": "MALE",
+    "phoneNumber": "0901234522"
+  },
+  {
+    "name": "Đỗ Thị Thu",
+    "email": "gv.nguvan3@eduassess.vn",
+    "subjects": [
+      "Ngữ văn"
+    ],
+    "address": "14 Hoàng Diệu, Quận 4, TP.HCM",
+    "dateOfBirth": "1985-07-09",
+    "sex": "FEMALE",
+    "phoneNumber": "0901234523"
+  },
+  {
+    "name": "Kiều Văn Tiến",
+    "email": "gv.nguvan4@eduassess.vn",
+    "subjects": [
+      "Ngữ văn"
+    ],
+    "address": "37 Bến Vân Đồn, Quận 4, TP.HCM",
+    "dateOfBirth": "1978-05-23",
+    "sex": "MALE",
+    "phoneNumber": "0901234524"
+  }
+]

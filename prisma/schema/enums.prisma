@@ -1,0 +1,24 @@
+// ─── Enums ───────────────────────────────────────────────────
+
+enum Role {
+  ADMIN
+  TEACHER
+  STUDENT
+}
+
+enum SchoolLevel {
+  PRIMARY   // Tiểu học (1–5)
+  MIDDLE    // THCS (6–9)
+  HIGH      // THPT (10–12)
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+enum QuestionStatus {
+  PENDING   // AI gợi ý, chờ giáo viên review/approve
+  APPROVED  // Đã được giáo viên duyệt
+}

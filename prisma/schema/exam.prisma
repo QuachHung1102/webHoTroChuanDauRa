@@ -1,0 +1,66 @@
+// ─── Exam (Đề kiểm tra & Bài làm học sinh) ───────────────────
+
+model Exam {
+  id          String   @id @default(cuid())
+  title       String
+  subjectId   String
+  classId     String
+  createdById String
+  duration    Int      // Thời gian làm bài (phút)
+  showAnswer  Boolean  @default(true) // Cho phép học sinh xem đáp án sau khi nộp
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  subject   Subject @relation(fields: [subjectId], references: [id])
+  class     Class   @relation(fields: [classId], references: [id])
+  createdBy User    @relation(fields: [createdById], references: [id])
+
+  examQuestions ExamQuestion[]
+  examAttempts  ExamAttempt[]
+
+  @@map("exams")
+}
+
+// Danh sách câu hỏi trong đề (kèm thứ tự)
+model ExamQuestion {
+  examId     String
+  questionId String
+  order      Int
+
+  exam     Exam     @relation(fields: [examId], references: [id])
+  question Question @relation(fields: [questionId], references: [id])
+
+  @@id([examId, questionId])
+  @@map("exam_questions")
+}
+
+// Lượt làm bài của học sinh
+model ExamAttempt {
+  id          String    @id @default(cuid())
+  examId      String
+  studentId   String
+  startedAt   DateTime  @default(now())
+  submittedAt DateTime? // NULL = chưa nộp
+  score       Float?    // % điểm (0–100), NULL = chưa chấm
+
+  exam    Exam @relation(fields: [examId], references: [id])
+  student User @relation(fields: [studentId], references: [id])
+
+  answers ExamAnswer[]
+
+  @@map("exam_attempts")
+}
+
+// Đáp án từng câu của học sinh trong một lượt làm
+model ExamAnswer {
+  id             String  @id @default(cuid())
+  attemptId      String
+  questionId     String
+  selectedOption Int?    // Index đáp án chọn (0–3), NULL = bỏ qua
+  isCorrect      Boolean
+
+  attempt  ExamAttempt @relation(fields: [attemptId], references: [id])
+  question Question    @relation(fields: [questionId], references: [id])
+
+  @@map("exam_answers")
+}

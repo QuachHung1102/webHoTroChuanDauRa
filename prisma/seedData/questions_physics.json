@@ -1,0 +1,329 @@
+[
+  {
+    "content": "Một vật chuyển động thẳng đều với vận tốc 72 km/h. Vận tốc đó bằng bao nhiêu m/s?",
+    "options": [
+      { "label": "A", "text": "20 m/s", "isCorrect": true },
+      { "label": "B", "text": "72 m/s", "isCorrect": false },
+      { "label": "C", "text": "7,2 m/s", "isCorrect": false },
+      { "label": "D", "text": "36 m/s", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Chuyển động thẳng đều",
+    "gradeNumber": 10,
+    "explanation": "72 km/h = 72 × 1000/3600 = 20 m/s."
+  },
+  {
+    "content": "Trong chuyển động thẳng đều, đồ thị vận tốc theo thời gian có dạng:",
+    "options": [
+      { "label": "A", "text": "Đường thẳng song song với trục thời gian", "isCorrect": true },
+      { "label": "B", "text": "Đường thẳng qua gốc tọa độ", "isCorrect": false },
+      { "label": "C", "text": "Parabol", "isCorrect": false },
+      { "label": "D", "text": "Đường cong bất kỳ", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Chuyển động thẳng đều",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Một xe đi từ A đến B với vận tốc 60 km/h mất 2 giờ. Quãng đường AB bằng:",
+    "options": [
+      { "label": "A", "text": "120 km", "isCorrect": true },
+      { "label": "B", "text": "60 km", "isCorrect": false },
+      { "label": "C", "text": "30 km", "isCorrect": false },
+      { "label": "D", "text": "180 km", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Chuyển động thẳng đều",
+    "gradeNumber": 10,
+    "explanation": "s = v × t = 60 × 2 = 120 km."
+  },
+  {
+    "content": "Phương trình chuyển động thẳng đều có dạng:",
+    "options": [
+      { "label": "A", "text": "x = x₀ + vt", "isCorrect": true },
+      { "label": "B", "text": "x = x₀ + v₀t + ½at²", "isCorrect": false },
+      { "label": "C", "text": "x = x₀ + ½at²", "isCorrect": false },
+      { "label": "D", "text": "v = v₀ + at", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Chuyển động thẳng đều",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Một vật bắt đầu chuyển động từ trạng thái đứng yên với gia tốc 2 m/s². Sau 5 giây vận tốc của vật là:",
+    "options": [
+      { "label": "A", "text": "10 m/s", "isCorrect": true },
+      { "label": "B", "text": "25 m/s", "isCorrect": false },
+      { "label": "C", "text": "7 m/s", "isCorrect": false },
+      { "label": "D", "text": "2,5 m/s", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Chuyển động thẳng biến đổi đều",
+    "gradeNumber": 10,
+    "explanation": "v = v₀ + at = 0 + 2×5 = 10 m/s."
+  },
+  {
+    "content": "Một vật chuyển động thẳng nhanh dần đều từ đứng yên. Sau 4 giây đi được 32 m. Gia tốc của vật là:",
+    "options": [
+      { "label": "A", "text": "4 m/s²", "isCorrect": true },
+      { "label": "B", "text": "8 m/s²", "isCorrect": false },
+      { "label": "C", "text": "2 m/s²", "isCorrect": false },
+      { "label": "D", "text": "16 m/s²", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Chuyển động thẳng biến đổi đều",
+    "gradeNumber": 10,
+    "explanation": "s = ½at² → 32 = ½×a×16 → a = 4 m/s²."
+  },
+  {
+    "content": "Vật rơi tự do sau 3 giây (g = 10 m/s²). Vận tốc lúc chạm đất là:",
+    "options": [
+      { "label": "A", "text": "30 m/s", "isCorrect": true },
+      { "label": "B", "text": "45 m/s", "isCorrect": false },
+      { "label": "C", "text": "15 m/s", "isCorrect": false },
+      { "label": "D", "text": "10 m/s", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Rơi tự do",
+    "gradeNumber": 10,
+    "explanation": "v = gt = 10×3 = 30 m/s."
+  },
+  {
+    "content": "Một viên đá được thả rơi tự do từ độ cao 80 m (g = 10 m/s²). Thời gian rơi là:",
+    "options": [
+      { "label": "A", "text": "4 s", "isCorrect": true },
+      { "label": "B", "text": "8 s", "isCorrect": false },
+      { "label": "C", "text": "2 s", "isCorrect": false },
+      { "label": "D", "text": "√8 s", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Rơi tự do",
+    "gradeNumber": 10,
+    "explanation": "h = ½gt² → 80 = ½×10×t² → t = 4 s."
+  },
+  {
+    "content": "Một vật có khối lượng 2 kg chịu lực tổng hợp 10 N. Gia tốc của vật là:",
+    "options": [
+      { "label": "A", "text": "5 m/s²", "isCorrect": true },
+      { "label": "B", "text": "20 m/s²", "isCorrect": false },
+      { "label": "C", "text": "0,2 m/s²", "isCorrect": false },
+      { "label": "D", "text": "12 m/s²", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Định luật Newton",
+    "gradeNumber": 10,
+    "explanation": "a = F/m = 10/2 = 5 m/s²."
+  },
+  {
+    "content": "Theo định luật 3 Newton, lực của vật A tác dụng lên vật B và lực phản lực của B lên A:",
+    "options": [
+      { "label": "A", "text": "Bằng nhau về độ lớn, ngược chiều, cùng giá", "isCorrect": true },
+      { "label": "B", "text": "Bằng nhau về độ lớn, cùng chiều", "isCorrect": false },
+      { "label": "C", "text": "Khác nhau về độ lớn, ngược chiều", "isCorrect": false },
+      { "label": "D", "text": "Không cùng phương, không bằng nhau", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Định luật Newton",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Một vật m = 3 kg đặt trên mặt phẳng nằm ngang, hệ số ma sát μ = 0,3 (g = 10 m/s²). Lực ma sát cực đại là:",
+    "options": [
+      { "label": "A", "text": "9 N", "isCorrect": true },
+      { "label": "B", "text": "3 N", "isCorrect": false },
+      { "label": "C", "text": "30 N", "isCorrect": false },
+      { "label": "D", "text": "0,9 N", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Định luật Newton",
+    "gradeNumber": 10,
+    "explanation": "Fms = μ × N = μ × mg = 0,3 × 3 × 10 = 9 N."
+  },
+  {
+    "content": "Một lực F = 20 N tác dụng lên vật làm vật di chuyển đoạn s = 5 m theo hướng lực. Công của lực là:",
+    "options": [
+      { "label": "A", "text": "100 J", "isCorrect": true },
+      { "label": "B", "text": "4 J", "isCorrect": false },
+      { "label": "C", "text": "25 J", "isCorrect": false },
+      { "label": "D", "text": "15 J", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Công và năng lượng",
+    "gradeNumber": 10,
+    "explanation": "A = F × s = 20 × 5 = 100 J."
+  },
+  {
+    "content": "Động năng của vật m = 2 kg chuyển động với v = 4 m/s là:",
+    "options": [
+      { "label": "A", "text": "16 J", "isCorrect": true },
+      { "label": "B", "text": "8 J", "isCorrect": false },
+      { "label": "C", "text": "4 J", "isCorrect": false },
+      { "label": "D", "text": "32 J", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Công và năng lượng",
+    "gradeNumber": 10,
+    "explanation": "Wđ = ½mv² = ½×2×16 = 16 J."
+  },
+  {
+    "content": "Thế năng trọng lực của vật m = 2 kg ở độ cao h = 5 m (g = 10 m/s²) là:",
+    "options": [
+      { "label": "A", "text": "100 J", "isCorrect": true },
+      { "label": "B", "text": "10 J", "isCorrect": false },
+      { "label": "C", "text": "50 J", "isCorrect": false },
+      { "label": "D", "text": "25 J", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Công và năng lượng",
+    "gradeNumber": 10,
+    "explanation": "Wt = mgh = 2×10×5 = 100 J."
+  },
+  {
+    "content": "Động lượng của vật m = 5 kg chuyển động với v = 6 m/s là:",
+    "options": [
+      { "label": "A", "text": "30 kg·m/s", "isCorrect": true },
+      { "label": "B", "text": "11 kg·m/s", "isCorrect": false },
+      { "label": "C", "text": "90 kg·m/s", "isCorrect": false },
+      { "label": "D", "text": "0,83 kg·m/s", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Động lượng và va chạm",
+    "gradeNumber": 10,
+    "explanation": "p = mv = 5×6 = 30 kg·m/s."
+  },
+  {
+    "content": "Trong chuyển động tròn đều, lực hướng tâm có phương và chiều:",
+    "options": [
+      { "label": "A", "text": "Hướng vào tâm quỹ đạo", "isCorrect": true },
+      { "label": "B", "text": "Hướng ra xa tâm quỹ đạo", "isCorrect": false },
+      { "label": "C", "text": "Tiếp tuyến với quỹ đạo", "isCorrect": false },
+      { "label": "D", "text": "Thẳng đứng hướng lên", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Chuyển động tròn đều",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Chu kỳ dao động điều hòa của con lắc lò xo m = 1 kg, k = 100 N/m là:",
+    "options": [
+      { "label": "A", "text": "π/5 s", "isCorrect": true },
+      { "label": "B", "text": "2π/5 s", "isCorrect": false },
+      { "label": "C", "text": "π/10 s", "isCorrect": false },
+      { "label": "D", "text": "2π s", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Dao động điều hòa",
+    "gradeNumber": 11,
+    "explanation": "T = 2π√(m/k) = 2π√(1/100) = 2π/10 = π/5 s."
+  },
+  {
+    "content": "Phương trình dao động điều hòa x = 5cos(2πt + π/4) cm. Biên độ dao động là:",
+    "options": [
+      { "label": "A", "text": "5 cm", "isCorrect": true },
+      { "label": "B", "text": "2π cm", "isCorrect": false },
+      { "label": "C", "text": "π/4 cm", "isCorrect": false },
+      { "label": "D", "text": "10 cm", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Dao động điều hòa",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Tốc độ truyền sóng cơ học trong một môi trường phụ thuộc vào:",
+    "options": [
+      { "label": "A", "text": "Tính chất đàn hồi và mật độ của môi trường", "isCorrect": true },
+      { "label": "B", "text": "Biên độ của sóng", "isCorrect": false },
+      { "label": "C", "text": "Tần số của sóng", "isCorrect": false },
+      { "label": "D", "text": "Bước sóng", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Sóng cơ",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Công thức liên hệ bước sóng λ, tốc độ truyền sóng v và tần số f là:",
+    "options": [
+      { "label": "A", "text": "λ = v/f", "isCorrect": true },
+      { "label": "B", "text": "λ = vf", "isCorrect": false },
+      { "label": "C", "text": "λ = f/v", "isCorrect": false },
+      { "label": "D", "text": "v = λ + f", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Vật lý",
+    "topic": "Sóng cơ",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Hai điện tích q₁ = q₂ = 2×10⁻⁶ C đặt cách nhau r = 0,1 m trong chân không. Lực tương tác giữa chúng là (k = 9×10⁹):",
+    "options": [
+      { "label": "A", "text": "3,6 N", "isCorrect": true },
+      { "label": "B", "text": "36 N", "isCorrect": false },
+      { "label": "C", "text": "0,36 N", "isCorrect": false },
+      { "label": "D", "text": "360 N", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Điện tích – Điện trường",
+    "gradeNumber": 11,
+    "explanation": "F = kq₁q₂/r² = 9×10⁹ × (2×10⁻⁶)² / (0,1)² = 9×10⁹ × 4×10⁻¹² / 0,01 = 3,6 N."
+  },
+  {
+    "content": "Điện trở suất của dây dẫn phụ thuộc vào yếu tố nào dưới đây?",
+    "options": [
+      { "label": "A", "text": "Vật liệu và nhiệt độ", "isCorrect": true },
+      { "label": "B", "text": "Chiều dài và tiết diện dây", "isCorrect": false },
+      { "label": "C", "text": "Cường độ dòng điện qua dây", "isCorrect": false },
+      { "label": "D", "text": "Hiệu điện thế đặt vào hai đầu dây", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Dòng điện không đổi",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Điện trở của dây dẫn có chiều dài L = 2 m, tiết diện S = 1 mm², điện trở suất ρ = 1,7×10⁻⁸ Ω·m là:",
+    "options": [
+      { "label": "A", "text": "0,034 Ω", "isCorrect": true },
+      { "label": "B", "text": "0,34 Ω", "isCorrect": false },
+      { "label": "C", "text": "3,4 Ω", "isCorrect": false },
+      { "label": "D", "text": "34 Ω", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Dòng điện không đổi",
+    "gradeNumber": 11,
+    "explanation": "R = ρL/S = 1,7×10⁻⁸ × 2 / 10⁻⁶ = 0,034 Ω."
+  },
+  {
+    "content": "Từ trường của một dây dẫn thẳng dài mang dòng điện có dạng đường sức từ là:",
+    "options": [
+      { "label": "A", "text": "Các đường tròn đồng tâm nằm trong mặt phẳng vuông góc với dây", "isCorrect": true },
+      { "label": "B", "text": "Các đường thẳng song song với dây", "isCorrect": false },
+      { "label": "C", "text": "Các đường xoắn ốc quanh dây", "isCorrect": false },
+      { "label": "D", "text": "Các đường thẳng hướng ra xa dây", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Vật lý",
+    "topic": "Từ trường",
+    "gradeNumber": 11
+  }
+]

@@ -1,0 +1,296 @@
+[
+  {
+    "content": "Nguyên tử carbon (C) có số proton là:",
+    "options": [
+      { "label": "A", "text": "6", "isCorrect": true },
+      { "label": "B", "text": "12", "isCorrect": false },
+      { "label": "C", "text": "4", "isCorrect": false },
+      { "label": "D", "text": "8", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Hóa học",
+    "topic": "Cấu tạo nguyên tử",
+    "gradeNumber": 10,
+    "explanation": "Carbon có số hiệu nguyên tử Z = 6, tức là 6 proton."
+  },
+  {
+    "content": "Lớp electron ngoài cùng của nguyên tử Na (Z = 11) chứa mấy electron?",
+    "options": [
+      { "label": "A", "text": "1", "isCorrect": true },
+      { "label": "B", "text": "2", "isCorrect": false },
+      { "label": "C", "text": "3", "isCorrect": false },
+      { "label": "D", "text": "8", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Cấu tạo nguyên tử",
+    "gradeNumber": 10,
+    "explanation": "Na có cấu hình e: 2, 8, 1. Lớp ngoài cùng có 1 electron."
+  },
+  {
+    "content": "Đồng vị là các nguyên tử của cùng một nguyên tố có cùng số proton nhưng khác nhau về số:",
+    "options": [
+      { "label": "A", "text": "Nơtron", "isCorrect": true },
+      { "label": "B", "text": "Electron", "isCorrect": false },
+      { "label": "C", "text": "Proton", "isCorrect": false },
+      { "label": "D", "text": "Lớp electron", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Cấu tạo nguyên tử",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Khối lượng nguyên tử chủ yếu tập trung ở:",
+    "options": [
+      { "label": "A", "text": "Hạt nhân nguyên tử", "isCorrect": true },
+      { "label": "B", "text": "Vỏ electron", "isCorrect": false },
+      { "label": "C", "text": "Phân bố đều trong nguyên tử", "isCorrect": false },
+      { "label": "D", "text": "Lớp electron ngoài cùng", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Hóa học",
+    "topic": "Cấu tạo nguyên tử",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Cấu hình electron của nguyên tử O (Z = 8) là:",
+    "options": [
+      { "label": "A", "text": "1s² 2s² 2p⁴", "isCorrect": true },
+      { "label": "B", "text": "1s² 2s² 2p⁶", "isCorrect": false },
+      { "label": "C", "text": "1s² 2s⁴ 2p²", "isCorrect": false },
+      { "label": "D", "text": "1s² 2s² 2p² 3s²", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Cấu tạo nguyên tử",
+    "gradeNumber": 10,
+    "explanation": "O có Z=8, điền electron theo thứ tự: 1s² 2s² 2p⁴."
+  },
+  {
+    "content": "Trong bảng tuần hoàn, các nguyên tố trong cùng một nhóm có chung đặc điểm là:",
+    "options": [
+      { "label": "A", "text": "Số electron ở lớp ngoài cùng bằng nhau", "isCorrect": true },
+      { "label": "B", "text": "Số lớp electron bằng nhau", "isCorrect": false },
+      { "label": "C", "text": "Khối lượng nguyên tử bằng nhau", "isCorrect": false },
+      { "label": "D", "text": "Số proton bằng nhau", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Hóa học",
+    "topic": "Bảng tuần hoàn các nguyên tố hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Trong một chu kỳ của bảng tuần hoàn, từ trái sang phải tính kim loại của các nguyên tố:",
+    "options": [
+      { "label": "A", "text": "Giảm dần", "isCorrect": true },
+      { "label": "B", "text": "Tăng dần", "isCorrect": false },
+      { "label": "C", "text": "Không thay đổi", "isCorrect": false },
+      { "label": "D", "text": "Thay đổi không theo quy luật", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Bảng tuần hoàn các nguyên tố hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Nguyên tố nào sau đây thuộc chu kỳ 3, nhóm IA?",
+    "options": [
+      { "label": "A", "text": "Na", "isCorrect": true },
+      { "label": "B", "text": "Mg", "isCorrect": false },
+      { "label": "C", "text": "Li", "isCorrect": false },
+      { "label": "D", "text": "K", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Bảng tuần hoàn các nguyên tố hóa học",
+    "gradeNumber": 10,
+    "explanation": "Na (Z=11) có cấu hình 2,8,1 → 3 lớp (chu kỳ 3), 1e ngoài cùng (nhóm IA)."
+  },
+  {
+    "content": "Liên kết ion được hình thành do:",
+    "options": [
+      { "label": "A", "text": "Lực hút tĩnh điện giữa các ion mang điện trái dấu", "isCorrect": true },
+      { "label": "B", "text": "Sự dùng chung cặp electron", "isCorrect": false },
+      { "label": "C", "text": "Sự trao đổi electron giữa hai nguyên tử", "isCorrect": false },
+      { "label": "D", "text": "Lực hút giữa hai nguyên tử trung hòa", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Hóa học",
+    "topic": "Liên kết hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Liên kết trong phân tử H₂O là loại liên kết nào?",
+    "options": [
+      { "label": "A", "text": "Liên kết cộng hóa trị có cực", "isCorrect": true },
+      { "label": "B", "text": "Liên kết ion", "isCorrect": false },
+      { "label": "C", "text": "Liên kết cộng hóa trị không cực", "isCorrect": false },
+      { "label": "D", "text": "Liên kết kim loại", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Liên kết hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Trong phản ứng oxi hóa – khử, chất khử là chất:",
+    "options": [
+      { "label": "A", "text": "Nhường electron", "isCorrect": true },
+      { "label": "B", "text": "Nhận electron", "isCorrect": false },
+      { "label": "C", "text": "Không thay đổi số oxi hóa", "isCorrect": false },
+      { "label": "D", "text": "Bị oxi hóa và nhận electron", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Hóa học",
+    "topic": "Phản ứng oxi hóa – khử",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Số oxi hóa của S trong H₂SO₄ là:",
+    "options": [
+      { "label": "A", "text": "+6", "isCorrect": true },
+      { "label": "B", "text": "+4", "isCorrect": false },
+      { "label": "C", "text": "-2", "isCorrect": false },
+      { "label": "D", "text": "0", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Phản ứng oxi hóa – khử",
+    "gradeNumber": 10,
+    "explanation": "H(+1)×2 + S(x) + O(-2)×4 = 0 → 2 + x - 8 = 0 → x = +6."
+  },
+  {
+    "content": "Clo (Cl₂) tác dụng với NaOH ở nhiệt độ thường tạo ra sản phẩm chính là:",
+    "options": [
+      { "label": "A", "text": "NaCl và NaClO", "isCorrect": true },
+      { "label": "B", "text": "NaCl và NaClO₃", "isCorrect": false },
+      { "label": "C", "text": "NaClO₃ và NaCl", "isCorrect": false },
+      { "label": "D", "text": "NaClO₄ và NaCl", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Nhóm halogen",
+    "gradeNumber": 10,
+    "explanation": "Cl₂ + 2NaOH → NaCl + NaClO + H₂O (ở nhiệt độ thường)."
+  },
+  {
+    "content": "Tính axit của các axit halogen HF, HCl, HBr, HI tăng dần theo thứ tự:",
+    "options": [
+      { "label": "A", "text": "HF < HCl < HBr < HI", "isCorrect": true },
+      { "label": "B", "text": "HI < HBr < HCl < HF", "isCorrect": false },
+      { "label": "C", "text": "HCl < HBr < HI < HF", "isCorrect": false },
+      { "label": "D", "text": "HF < HI < HBr < HCl", "isCorrect": false }
+    ],
+    "difficulty": "HARD",
+    "subject": "Hóa học",
+    "topic": "Nhóm halogen",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Lưu huỳnh (S) trong H₂S có số oxi hóa là:",
+    "options": [
+      { "label": "A", "text": "-2", "isCorrect": true },
+      { "label": "B", "text": "+2", "isCorrect": false },
+      { "label": "C", "text": "0", "isCorrect": false },
+      { "label": "D", "text": "+4", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Hóa học",
+    "topic": "Nhóm oxi – lưu huỳnh",
+    "gradeNumber": 10,
+    "explanation": "H(+1)×2 + S(x) = 0 → x = -2."
+  },
+  {
+    "content": "Yếu tố nào sau đây không ảnh hưởng đến tốc độ phản ứng hóa học?",
+    "options": [
+      { "label": "A", "text": "Màu sắc của chất phản ứng", "isCorrect": true },
+      { "label": "B", "text": "Nồng độ chất phản ứng", "isCorrect": false },
+      { "label": "C", "text": "Nhiệt độ", "isCorrect": false },
+      { "label": "D", "text": "Chất xúc tác", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Hóa học",
+    "topic": "Tốc độ phản ứng hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Khi tăng nhiệt độ thêm 10°C, tốc độ phản ứng tăng trung bình bao nhiêu lần?",
+    "options": [
+      { "label": "A", "text": "2 – 4 lần", "isCorrect": true },
+      { "label": "B", "text": "10 lần", "isCorrect": false },
+      { "label": "C", "text": "0,5 lần", "isCorrect": false },
+      { "label": "D", "text": "100 lần", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Tốc độ phản ứng hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Nguyên lý Le Chatelier phát biểu: Khi một hệ đang ở trạng thái cân bằng bị tác động bởi yếu tố bên ngoài, hệ sẽ:",
+    "options": [
+      { "label": "A", "text": "Chuyển dịch theo chiều chống lại sự thay đổi đó", "isCorrect": true },
+      { "label": "B", "text": "Chuyển dịch theo chiều cùng hướng với sự thay đổi đó", "isCorrect": false },
+      { "label": "C", "text": "Không thay đổi gì", "isCorrect": false },
+      { "label": "D", "text": "Đạt cân bằng mới nhanh hơn", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Cân bằng hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Amoniac (NH₃) là sản phẩm của quá trình tổng hợp từ N₂ và H₂. Để tăng hiệu suất tổng hợp NH₃ cần:",
+    "options": [
+      { "label": "A", "text": "Tăng áp suất và giảm nhiệt độ", "isCorrect": true },
+      { "label": "B", "text": "Giảm áp suất và tăng nhiệt độ", "isCorrect": false },
+      { "label": "C", "text": "Tăng nhiệt độ và áp suất", "isCorrect": false },
+      { "label": "D", "text": "Giảm nồng độ N₂", "isCorrect": false }
+    ],
+    "difficulty": "HARD",
+    "subject": "Hóa học",
+    "topic": "Nitơ – Photpho",
+    "gradeNumber": 11,
+    "explanation": "N₂ + 3H₂ ⇌ 2NH₃ (tỏa nhiệt, giảm mol khí). Tăng áp và giảm nhiệt độ chuyển dịch theo chiều thuận."
+  },
+  {
+    "content": "Công thức phân tử của metan là:",
+    "options": [
+      { "label": "A", "text": "CH₄", "isCorrect": true },
+      { "label": "B", "text": "C₂H₆", "isCorrect": false },
+      { "label": "C", "text": "C₂H₄", "isCorrect": false },
+      { "label": "D", "text": "CH₂", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Hóa học",
+    "topic": "Hiđrocacbon no",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Etilen (C₂H₄) có liên kết nào trong phân tử?",
+    "options": [
+      { "label": "A", "text": "Một liên kết đôi C=C", "isCorrect": true },
+      { "label": "B", "text": "Một liên kết ba C≡C", "isCorrect": false },
+      { "label": "C", "text": "Chỉ các liên kết đơn", "isCorrect": false },
+      { "label": "D", "text": "Vòng benzen", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Hóa học",
+    "topic": "Hiđrocacbon không no",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Phản ứng đặc trưng của ankan là:",
+    "options": [
+      { "label": "A", "text": "Phản ứng thế (halogen hóa)", "isCorrect": true },
+      { "label": "B", "text": "Phản ứng cộng", "isCorrect": false },
+      { "label": "C", "text": "Phản ứng trùng hợp", "isCorrect": false },
+      { "label": "D", "text": "Phản ứng este hóa", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Hóa học",
+    "topic": "Hiđrocacbon no",
+    "gradeNumber": 11
+  }
+]

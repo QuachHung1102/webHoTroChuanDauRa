@@ -1,0 +1,26 @@
+// ─── User ────────────────────────────────────────────────────
+
+model User {
+  id          String    @id @default(cuid())
+  name        String
+  email       String    @unique
+  password    String
+  role        Role      @default(STUDENT)
+  address     String?
+  dateOfBirth DateTime?
+  sex         String?
+  phoneNumber String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  // Relations
+  teacherClasses     TeacherClass[]
+  studentClasses     StudentClass[]
+  questionsCreated   Question[]
+  examsCreated       Exam[]
+  examAttempts       ExamAttempt[]
+  flashcardSets      FlashcardSet[]
+  flashcardSessions  FlashcardSession[]
+
+  @@map("users")
+}

@@ -1,0 +1,642 @@
+[
+  {
+    "name": "Hàm số bậc hai",
+    "subject": "Toán",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Phương trình và bất phương trình bậc hai",
+    "subject": "Toán",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Hệ phương trình",
+    "subject": "Toán",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Vectơ",
+    "subject": "Toán",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Tích vô hướng của hai vectơ",
+    "subject": "Toán",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Phương trình đường thẳng",
+    "subject": "Toán",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Ba đường conic",
+    "subject": "Toán",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Thống kê mô tả",
+    "subject": "Toán",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Xác suất",
+    "subject": "Toán",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Giới hạn của hàm số",
+    "subject": "Toán",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Đạo hàm",
+    "subject": "Toán",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Hàm số lượng giác",
+    "subject": "Toán",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Phương trình lượng giác",
+    "subject": "Toán",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Dãy số – Cấp số cộng – Cấp số nhân",
+    "subject": "Toán",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Giới hạn của dãy số",
+    "subject": "Toán",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Đường thẳng và mặt phẳng trong không gian",
+    "subject": "Toán",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Ứng dụng đạo hàm",
+    "subject": "Toán",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Nguyên hàm",
+    "subject": "Toán",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Tích phân",
+    "subject": "Toán",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Số phức",
+    "subject": "Toán",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Hàm số mũ và logarit",
+    "subject": "Toán",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Khối đa diện",
+    "subject": "Toán",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Mặt cầu – Mặt trụ – Mặt nón",
+    "subject": "Toán",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Chuyển động thẳng đều",
+    "subject": "Vật lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Chuyển động thẳng biến đổi đều",
+    "subject": "Vật lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Rơi tự do",
+    "subject": "Vật lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Định luật Newton",
+    "subject": "Vật lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Công và năng lượng",
+    "subject": "Vật lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Động lượng và va chạm",
+    "subject": "Vật lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Chuyển động tròn đều",
+    "subject": "Vật lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Dao động điều hòa",
+    "subject": "Vật lý",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Sóng cơ",
+    "subject": "Vật lý",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Điện tích – Điện trường",
+    "subject": "Vật lý",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Dòng điện không đổi",
+    "subject": "Vật lý",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Từ trường",
+    "subject": "Vật lý",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Cảm ứng điện từ",
+    "subject": "Vật lý",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Dòng điện xoay chiều",
+    "subject": "Vật lý",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Sóng điện từ",
+    "subject": "Vật lý",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Quang học",
+    "subject": "Vật lý",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Vật lý hạt nhân",
+    "subject": "Vật lý",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Cấu tạo nguyên tử",
+    "subject": "Hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Bảng tuần hoàn các nguyên tố hóa học",
+    "subject": "Hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Liên kết hóa học",
+    "subject": "Hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Phản ứng oxi hóa – khử",
+    "subject": "Hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Nhóm halogen",
+    "subject": "Hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Nhóm oxi – lưu huỳnh",
+    "subject": "Hóa học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Tốc độ phản ứng hóa học",
+    "subject": "Hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Cân bằng hóa học",
+    "subject": "Hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Nitơ – Photpho",
+    "subject": "Hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Cacbon – Silic",
+    "subject": "Hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Đại cương về hóa học hữu cơ",
+    "subject": "Hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Hiđrocacbon no",
+    "subject": "Hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Hiđrocacbon không no",
+    "subject": "Hóa học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Ancol – Phenol",
+    "subject": "Hóa học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Anđehit – Xeton – Axit cacboxylic",
+    "subject": "Hóa học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Este – Lipit",
+    "subject": "Hóa học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Cacbohiđrat",
+    "subject": "Hóa học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Amin – Aminoaxit – Protein",
+    "subject": "Hóa học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Polime và vật liệu polime",
+    "subject": "Hóa học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Tế bào học",
+    "subject": "Sinh học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Chuyển hóa vật chất và năng lượng trong tế bào",
+    "subject": "Sinh học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Phân bào",
+    "subject": "Sinh học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Vi sinh vật",
+    "subject": "Sinh học",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Chuyển hóa vật chất và năng lượng ở thực vật",
+    "subject": "Sinh học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Chuyển hóa vật chất và năng lượng ở động vật",
+    "subject": "Sinh học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Sinh sản ở thực vật",
+    "subject": "Sinh học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Sinh sản ở động vật",
+    "subject": "Sinh học",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Cơ chế di truyền và biến dị",
+    "subject": "Sinh học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Tính quy luật của hiện tượng di truyền",
+    "subject": "Sinh học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Di truyền học quần thể",
+    "subject": "Sinh học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Tiến hóa",
+    "subject": "Sinh học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Sinh thái học",
+    "subject": "Sinh học",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Các cuộc cách mạng công nghiệp",
+    "subject": "Lịch sử",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Sự hình thành các nước châu Á",
+    "subject": "Lịch sử",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Văn minh Đông Nam Á cổ – trung đại",
+    "subject": "Lịch sử",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Việt Nam từ thế kỉ X đến XV",
+    "subject": "Lịch sử",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Chiến tranh thế giới thứ nhất",
+    "subject": "Lịch sử",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Cách mạng tháng Mười Nga",
+    "subject": "Lịch sử",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Phong trào độc lập dân tộc ở châu Á",
+    "subject": "Lịch sử",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Việt Nam từ 1919 đến 1930",
+    "subject": "Lịch sử",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Chiến tranh thế giới thứ hai",
+    "subject": "Lịch sử",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Quan hệ quốc tế sau 1945",
+    "subject": "Lịch sử",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Cách mạng tháng Tám và kháng chiến chống Pháp",
+    "subject": "Lịch sử",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Kháng chiến chống Mỹ",
+    "subject": "Lịch sử",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Trái Đất – Thạch quyển",
+    "subject": "Địa lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Khí quyển",
+    "subject": "Địa lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Thủy quyển",
+    "subject": "Địa lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Dân số và đô thị hóa",
+    "subject": "Địa lý",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Địa lý dân cư",
+    "subject": "Địa lý",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Địa lý kinh tế thế giới",
+    "subject": "Địa lý",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Địa lý khu vực châu Á",
+    "subject": "Địa lý",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Địa lý tự nhiên Việt Nam",
+    "subject": "Địa lý",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Địa lý dân cư Việt Nam",
+    "subject": "Địa lý",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Địa lý kinh tế Việt Nam",
+    "subject": "Địa lý",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Các vùng kinh tế Việt Nam",
+    "subject": "Địa lý",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Unit 1: Family Life",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Unit 2: Your Body and You",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Unit 3: Music",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Unit 4: For a Better Community",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Unit 5: Inventions",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Grammar lớp 10: Tenses & Modal Verbs",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Unit 1: Generation Gap",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Unit 2: Relationships",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Unit 3: Becoming Independent",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Unit 4: Caring for Our Planet",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Unit 5: Being Part of ASEAN",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Grammar lớp 11: Conditionals & Passive",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Unit 1: Life Stories",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Unit 2: Urbanisation",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Unit 3: The Green Movement",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Unit 4: The Mass Media",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Unit 5: Cultural Identity",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Grammar lớp 12: Reported Speech & Clauses",
+    "subject": "Tiếng Anh",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Văn bản thông tin lớp 10",
+    "subject": "Ngữ văn",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Thơ và thơ trữ tình lớp 10",
+    "subject": "Ngữ văn",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Truyện và tiểu thuyết lớp 10",
+    "subject": "Ngữ văn",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Nghị luận xã hội lớp 10",
+    "subject": "Ngữ văn",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Tiếng Việt lớp 10",
+    "subject": "Ngữ văn",
+    "gradeNumber": 10
+  },
+  {
+    "name": "Thơ hiện đại Việt Nam",
+    "subject": "Ngữ văn",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Truyện ngắn và truyện dài hiện đại",
+    "subject": "Ngữ văn",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Văn học nước ngoài lớp 11",
+    "subject": "Ngữ văn",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Nghị luận văn học lớp 11",
+    "subject": "Ngữ văn",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Tiếng Việt lớp 11",
+    "subject": "Ngữ văn",
+    "gradeNumber": 11
+  },
+  {
+    "name": "Văn học Việt Nam 1945–1975",
+    "subject": "Ngữ văn",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Văn học Việt Nam sau 1975",
+    "subject": "Ngữ văn",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Văn học nước ngoài lớp 12",
+    "subject": "Ngữ văn",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Nghị luận văn học lớp 12",
+    "subject": "Ngữ văn",
+    "gradeNumber": 12
+  },
+  {
+    "name": "Tiếng Việt lớp 12",
+    "subject": "Ngữ văn",
+    "gradeNumber": 12
+  }
+]

@@ -1,0 +1,41 @@
+// ─── Subject, Grade, Topic ────────────────────────────────────
+
+model Subject {
+  id              String  @id @default(cuid())
+  name            String  @unique // Toán, Vật lý, Hóa học, Sinh học...
+  canAddQuestions Boolean @default(true) // Admin có thể tắt để không cho GV tạo thêm câu hỏi
+
+  topics       Topic[]
+  questions    Question[]
+  exams        Exam[]
+  teacherClasses TeacherClass[]
+  flashcardSets  FlashcardSet[]
+
+  @@map("subjects")
+}
+
+model Grade {
+  id          String      @id @default(cuid())
+  level       SchoolLevel
+  gradeNumber Int         // 1–12
+
+  topics  Topic[]
+  classes Class[]
+
+  @@unique([level, gradeNumber])
+  @@map("grades")
+}
+
+// Chủ đề kiến thức — VD: "Hàm số bậc hai" thuộc Toán lớp 10
+model Topic {
+  id        String @id @default(cuid())
+  name      String
+  subjectId String
+  gradeId   String
+
+  subject   Subject    @relation(fields: [subjectId], references: [id])
+  grade     Grade      @relation(fields: [gradeId], references: [id])
+  questions Question[]
+
+  @@map("topics")
+}

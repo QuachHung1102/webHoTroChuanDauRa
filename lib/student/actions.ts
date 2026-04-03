@@ -1,0 +1,112 @@
+"use server";
+
+import { auth } from "@/auth";
+import { prisma } from "@/lib/db/prisma";
+import { redirect } from "next/navigation";
+
+// ── Bắt đầu làm bài (tạo ExamAttempt) ───────────────────────
+export async function startExamAction(examId: string): Promise<void> {
+  const session = await auth();
+  if (!session?.user?.id) redirect("/login");
+
+  const studentId = session.user.id;
+
+  // Kiểm tra học sinh có trong lớp được giao đề
+  const exam = await prisma.exam.findUnique({ where: { id: examId } });
+  if (!exam) redirect("/student/exams");
+
+  const inClass = await prisma.studentClass.findFirst({
+    where: { studentId, classId: exam.classId },
+  });
+  if (!inClass) redirect("/student/exams");
+
+  // Nếu đã có attempt chưa submit → tiếp tục
+  const existing = await prisma.examAttempt.findFirst({
+    where: { studentId, examId, submittedAt: null },
+  });
+  if (existing) {
+    redirect(`/student/exams/${examId}/take?attemptId=${existing.id}`);
+  }
+
+  // Không cho thi lại nếu đã submit
+  const submitted = await prisma.examAttempt.findFirst({
+    where: { studentId, examId, submittedAt: { not: null } },
+  });
+  if (submitted) {
+    redirect(`/student/exams/${examId}/results/${submitted.id}`);
+  }
+
+  const attempt = await prisma.examAttempt.create({
+    data: { examId, studentId },
+  });
+
+  redirect(`/student/exams/${examId}/take?attemptId=${attempt.id}`);
+}
+
+// ── Nộp bài ─────────────────────────────────────────────────
+export async function submitExamAction(
+  attemptId: string,
+  answers: { questionId: string; selectedOption: number | null }[],
+) {
+  const session = await auth();
+  if (!session?.user?.id) return { error: "Chưa đăng nhập" };
+
+  const studentId = session.user.id;
+
+  const attempt = await prisma.examAttempt.findUnique({
+    where: { id: attemptId },
+    include: {
+      exam: {
+        include: {
+          examQuestions: {
+            include: {
+              question: { select: { id: true, options: true } },
+            },
+          },
+        },
+      },
+    },
+  });
+
+  if (!attempt || attempt.studentId !== studentId)
+    return { error: "Không tìm thấy bài làm" };
+  if (attempt.submittedAt)
+    return { error: "Bài đã được nộp trước đó" };
+
+  // Map questionId → correct option index (0-3)
+  const correctMap = new Map<string, number>();
+  for (const eq of attempt.exam.examQuestions) {
+    const opts = eq.question.options as { label: string; text: string; isCorrect: boolean }[];
+    const correctIdx = opts.findIndex((o) => o.isCorrect);
+    correctMap.set(eq.question.id, correctIdx);
+  }
+
+  const total = attempt.exam.examQuestions.length;
+  let correctCount = 0;
+
+  // Tạo ExamAnswer records
+  await prisma.examAnswer.createMany({
+    data: answers.map((a) => {
+      const correctIdx = correctMap.get(a.questionId) ?? -1;
+      const isCorrect = a.selectedOption !== null && a.selectedOption === correctIdx;
+      if (isCorrect) correctCount++;
+      return {
+        attemptId,
+        questionId: a.questionId,
+        selectedOption: a.selectedOption,
+        isCorrect,
+      };
+    }),
+    skipDuplicates: true,
+  });
+
+  // Tính điểm và cập nhật attempt
+  const score = total > 0 ? (correctCount / total) * 100 : 0;
+
+  await prisma.examAttempt.update({
+    where: { id: attemptId },
+    data: { submittedAt: new Date(), score },
+  });
+
+  redirect(`/student/exams/${attempt.examId}/results/${attemptId}`);
+}

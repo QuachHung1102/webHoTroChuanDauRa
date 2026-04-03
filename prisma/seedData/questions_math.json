@@ -1,0 +1,502 @@
+[
+  {
+    "content": "Parabol y = x² - 4x + 3 có đỉnh tại điểm nào?",
+    "options": [
+      { "label": "A", "text": "(2, -1)", "isCorrect": true },
+      { "label": "B", "text": "(2, 1)", "isCorrect": false },
+      { "label": "C", "text": "(-2, -1)", "isCorrect": false },
+      { "label": "D", "text": "(4, 3)", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Hàm số bậc hai",
+    "gradeNumber": 10,
+    "explanation": "Đỉnh parabol y = ax² + bx + c tại x = -b/(2a) = 4/2 = 2, y = 4 - 8 + 3 = -1."
+  },
+  {
+    "content": "Hàm số y = -2x² + 8x - 5 đạt giá trị lớn nhất bằng bao nhiêu?",
+    "options": [
+      { "label": "A", "text": "3", "isCorrect": true },
+      { "label": "B", "text": "5", "isCorrect": false },
+      { "label": "C", "text": "-5", "isCorrect": false },
+      { "label": "D", "text": "8", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Hàm số bậc hai",
+    "gradeNumber": 10,
+    "explanation": "y_max = c - b²/(4a) = -5 - 64/(-8) = -5 + 8 = 3."
+  },
+  {
+    "content": "Parabol y = 2x² - 4x + 1 có trục đối xứng là đường thẳng nào?",
+    "options": [
+      { "label": "A", "text": "x = 1", "isCorrect": true },
+      { "label": "B", "text": "x = 2", "isCorrect": false },
+      { "label": "C", "text": "x = -1", "isCorrect": false },
+      { "label": "D", "text": "x = -2", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Hàm số bậc hai",
+    "gradeNumber": 10,
+    "explanation": "Trục đối xứng x = -b/(2a) = 4/4 = 1."
+  },
+  {
+    "content": "Parabol y = ax² + bx + c đi qua gốc tọa độ O(0,0). Điều này có nghĩa là:",
+    "options": [
+      { "label": "A", "text": "c = 0", "isCorrect": true },
+      { "label": "B", "text": "a = 0", "isCorrect": false },
+      { "label": "C", "text": "b = 0", "isCorrect": false },
+      { "label": "D", "text": "a + b + c = 0", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Hàm số bậc hai",
+    "gradeNumber": 10,
+    "explanation": "Thay x = 0, y = 0 vào phương trình: c = 0."
+  },
+  {
+    "content": "Hàm số y = x² - 2x - 3 có bảng biến thiên với giá trị nhỏ nhất là:",
+    "options": [
+      { "label": "A", "text": "-4", "isCorrect": true },
+      { "label": "B", "text": "-3", "isCorrect": false },
+      { "label": "C", "text": "1", "isCorrect": false },
+      { "label": "D", "text": "0", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Hàm số bậc hai",
+    "gradeNumber": 10,
+    "explanation": "x_min = 1, y_min = 1 - 2 - 3 = -4."
+  },
+  {
+    "content": "Phương trình x² - 5x + 6 = 0 có nghiệm là:",
+    "options": [
+      { "label": "A", "text": "x = 2 hoặc x = 3", "isCorrect": true },
+      { "label": "B", "text": "x = -2 hoặc x = -3", "isCorrect": false },
+      { "label": "C", "text": "x = 1 hoặc x = 6", "isCorrect": false },
+      { "label": "D", "text": "Vô nghiệm", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Phương trình và bất phương trình bậc hai",
+    "gradeNumber": 10,
+    "explanation": "Δ = 25 - 24 = 1. x₁ = 3, x₂ = 2."
+  },
+  {
+    "content": "Bất phương trình x² - 3x - 4 < 0 có tập nghiệm là:",
+    "options": [
+      { "label": "A", "text": "(-1; 4)", "isCorrect": true },
+      { "label": "B", "text": "(-∞; -1) ∪ (4; +∞)", "isCorrect": false },
+      { "label": "C", "text": "(-4; 1)", "isCorrect": false },
+      { "label": "D", "text": "(-∞; -4) ∪ (1; +∞)", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Phương trình và bất phương trình bậc hai",
+    "gradeNumber": 10,
+    "explanation": "Nghiệm phương trình là x = -1 và x = 4. Vì a > 0, tam thức âm khi -1 < x < 4."
+  },
+  {
+    "content": "Phương trình 2x² - 7x + 3 = 0 có tổng hai nghiệm bằng:",
+    "options": [
+      { "label": "A", "text": "7/2", "isCorrect": true },
+      { "label": "B", "text": "3/2", "isCorrect": false },
+      { "label": "C", "text": "-7/2", "isCorrect": false },
+      { "label": "D", "text": "7", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Phương trình và bất phương trình bậc hai",
+    "gradeNumber": 10,
+    "explanation": "Theo Viète: x₁ + x₂ = -b/a = 7/2."
+  },
+  {
+    "content": "Phương trình x² + bx + 4 = 0 có nghiệm kép khi b bằng:",
+    "options": [
+      { "label": "A", "text": "±4", "isCorrect": true },
+      { "label": "B", "text": "±2", "isCorrect": false },
+      { "label": "C", "text": "±8", "isCorrect": false },
+      { "label": "D", "text": "±16", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Phương trình và bất phương trình bậc hai",
+    "gradeNumber": 10,
+    "explanation": "Nghiệm kép khi Δ = 0: b² - 16 = 0 → b = ±4."
+  },
+  {
+    "content": "Bất phương trình 2x² + x - 6 ≥ 0 có tập nghiệm là:",
+    "options": [
+      { "label": "A", "text": "(-∞; -2] ∪ [3/2; +∞)", "isCorrect": true },
+      { "label": "B", "text": "[-2; 3/2]", "isCorrect": false },
+      { "label": "C", "text": "(-∞; -3/2] ∪ [2; +∞)", "isCorrect": false },
+      { "label": "D", "text": "[-3/2; 2]", "isCorrect": false }
+    ],
+    "difficulty": "HARD",
+    "subject": "Toán",
+    "topic": "Phương trình và bất phương trình bậc hai",
+    "gradeNumber": 10,
+    "explanation": "Nghiệm 2x² + x - 6 = 0 là x = -2 và x = 3/2. Vì a = 2 > 0, tam thức ≥ 0 khi x ≤ -2 hoặc x ≥ 3/2."
+  },
+  {
+    "content": "Cho hệ phương trình: x + y = 5 và 2x - y = 1. Nghiệm của hệ là:",
+    "options": [
+      { "label": "A", "text": "x = 2, y = 3", "isCorrect": true },
+      { "label": "B", "text": "x = 3, y = 2", "isCorrect": false },
+      { "label": "C", "text": "x = 1, y = 4", "isCorrect": false },
+      { "label": "D", "text": "x = 4, y = 1", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Hệ phương trình",
+    "gradeNumber": 10,
+    "explanation": "Cộng hai phương trình: 3x = 6 → x = 2. Thay vào: y = 3."
+  },
+  {
+    "content": "Vectơ $\\vec{a}$ = (3; 4) có độ dài là:",
+    "options": [
+      { "label": "A", "text": "5", "isCorrect": true },
+      { "label": "B", "text": "7", "isCorrect": false },
+      { "label": "C", "text": "√7", "isCorrect": false },
+      { "label": "D", "text": "25", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Vectơ",
+    "gradeNumber": 10,
+    "explanation": "|a| = √(3² + 4²) = √25 = 5."
+  },
+  {
+    "content": "Cho $\\vec{a}$ = (1; 2) và $\\vec{b}$ = (3; 4). Tích vô hướng $\\vec{a}$·$\\vec{b}$ bằng:",
+    "options": [
+      { "label": "A", "text": "11", "isCorrect": true },
+      { "label": "B", "text": "14", "isCorrect": false },
+      { "label": "C", "text": "5", "isCorrect": false },
+      { "label": "D", "text": "8", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Tích vô hướng của hai vectơ",
+    "gradeNumber": 10,
+    "explanation": "a·b = 1×3 + 2×4 = 3 + 8 = 11."
+  },
+  {
+    "content": "Hai vectơ $\\vec{a}$ = (2; 1) và $\\vec{b}$ = (-1; 2) có tích vô hướng bằng 0, chứng tỏ hai vectơ này:",
+    "options": [
+      { "label": "A", "text": "Vuông góc nhau", "isCorrect": true },
+      { "label": "B", "text": "Song song nhau", "isCorrect": false },
+      { "label": "C", "text": "Cùng hướng", "isCorrect": false },
+      { "label": "D", "text": "Bằng nhau", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Tích vô hướng của hai vectơ",
+    "gradeNumber": 10,
+    "explanation": "a·b = 0 ⟺ hai vectơ vuông góc nhau."
+  },
+  {
+    "content": "Phương trình đường thẳng đi qua A(1; 2) và có hệ số góc k = 3 là:",
+    "options": [
+      { "label": "A", "text": "y = 3x - 1", "isCorrect": true },
+      { "label": "B", "text": "y = 3x + 1", "isCorrect": false },
+      { "label": "C", "text": "y = 3x - 5", "isCorrect": false },
+      { "label": "D", "text": "y = 3x + 5", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Phương trình đường thẳng",
+    "gradeNumber": 10,
+    "explanation": "y - 2 = 3(x - 1) → y = 3x - 1."
+  },
+  {
+    "content": "Hai đường thẳng y = 2x + 3 và y = 2x - 5 có quan hệ như thế nào?",
+    "options": [
+      { "label": "A", "text": "Song song", "isCorrect": true },
+      { "label": "B", "text": "Cắt nhau", "isCorrect": false },
+      { "label": "C", "text": "Trùng nhau", "isCorrect": false },
+      { "label": "D", "text": "Vuông góc", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Phương trình đường thẳng",
+    "gradeNumber": 10,
+    "explanation": "Cùng hệ số góc k = 2, tung độ gốc khác nhau nên hai đường thẳng song song."
+  },
+  {
+    "content": "Trong thí nghiệm gieo một đồng xu cân đối hai lần. Xác suất để được đúng một lần mặt ngửa là:",
+    "options": [
+      { "label": "A", "text": "1/2", "isCorrect": true },
+      { "label": "B", "text": "1/4", "isCorrect": false },
+      { "label": "C", "text": "3/4", "isCorrect": false },
+      { "label": "D", "text": "1", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Xác suất",
+    "gradeNumber": 10,
+    "explanation": "Không gian mẫu 4 phần tử. Đúng 1 lần ngửa: {NH, HN} → P = 2/4 = 1/2."
+  },
+  {
+    "content": "Trung bình cộng của tập số liệu: 4, 6, 8, 10, 12 là:",
+    "options": [
+      { "label": "A", "text": "8", "isCorrect": true },
+      { "label": "B", "text": "10", "isCorrect": false },
+      { "label": "C", "text": "6", "isCorrect": false },
+      { "label": "D", "text": "9", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Thống kê mô tả",
+    "gradeNumber": 10,
+    "explanation": "Trung bình = (4+6+8+10+12)/5 = 40/5 = 8."
+  },
+  {
+    "content": "Đạo hàm của hàm số f(x) = 3x⁴ - 2x³ + x - 5 là:",
+    "options": [
+      { "label": "A", "text": "12x³ - 6x² + 1", "isCorrect": true },
+      { "label": "B", "text": "12x³ - 6x² - 1", "isCorrect": false },
+      { "label": "C", "text": "12x⁴ - 6x³ + 1", "isCorrect": false },
+      { "label": "D", "text": "3x³ - 2x² + 1", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Đạo hàm",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Hàm số y = x³ - 3x đạt cực tiểu tại:",
+    "options": [
+      { "label": "A", "text": "x = 1", "isCorrect": true },
+      { "label": "B", "text": "x = -1", "isCorrect": false },
+      { "label": "C", "text": "x = 0", "isCorrect": false },
+      { "label": "D", "text": "x = 3", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Đạo hàm",
+    "gradeNumber": 11,
+    "explanation": "y' = 3x² - 3 = 0 → x = ±1. y''(1) = 6 > 0 → cực tiểu tại x = 1."
+  },
+  {
+    "content": "Phương trình tiếp tuyến với đường cong y = x² tại điểm có hoành độ x₀ = 2 là:",
+    "options": [
+      { "label": "A", "text": "y = 4x - 4", "isCorrect": true },
+      { "label": "B", "text": "y = 4x + 4", "isCorrect": false },
+      { "label": "C", "text": "y = 2x - 4", "isCorrect": false },
+      { "label": "D", "text": "y = 2x + 4", "isCorrect": false }
+    ],
+    "difficulty": "HARD",
+    "subject": "Toán",
+    "topic": "Đạo hàm",
+    "gradeNumber": 11,
+    "explanation": "y'(2) = 4. Tiếp điểm (2; 4). Tiếp tuyến: y - 4 = 4(x - 2) → y = 4x - 4."
+  },
+  {
+    "content": "Đạo hàm của f(x) = sin(2x) là:",
+    "options": [
+      { "label": "A", "text": "2cos(2x)", "isCorrect": true },
+      { "label": "B", "text": "cos(2x)", "isCorrect": false },
+      { "label": "C", "text": "-2cos(2x)", "isCorrect": false },
+      { "label": "D", "text": "-cos(2x)", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Đạo hàm",
+    "gradeNumber": 11,
+    "explanation": "f'(x) = cos(2x) · 2 = 2cos(2x)."
+  },
+  {
+    "content": "Đạo hàm của f(x) = eˣ · sin(x) là:",
+    "options": [
+      { "label": "A", "text": "eˣ(sin(x) + cos(x))", "isCorrect": true },
+      { "label": "B", "text": "eˣ · cos(x)", "isCorrect": false },
+      { "label": "C", "text": "eˣ(sin(x) - cos(x))", "isCorrect": false },
+      { "label": "D", "text": "eˣ · sin(x)", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Đạo hàm",
+    "gradeNumber": 11,
+    "explanation": "f'(x) = eˣ·sin(x) + eˣ·cos(x) = eˣ(sin(x) + cos(x))."
+  },
+  {
+    "content": "Giá trị của sin(π/6) bằng:",
+    "options": [
+      { "label": "A", "text": "1/2", "isCorrect": true },
+      { "label": "B", "text": "√2/2", "isCorrect": false },
+      { "label": "C", "text": "√3/2", "isCorrect": false },
+      { "label": "D", "text": "1", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Hàm số lượng giác",
+    "gradeNumber": 11,
+    "explanation": "sin(30°) = sin(π/6) = 1/2."
+  },
+  {
+    "content": "Phương trình sin(x) = 1/2 có nghiệm tổng quát là:",
+    "options": [
+      { "label": "A", "text": "x = π/6 + 2kπ hoặc x = 5π/6 + 2kπ", "isCorrect": true },
+      { "label": "B", "text": "x = π/3 + 2kπ hoặc x = 2π/3 + 2kπ", "isCorrect": false },
+      { "label": "C", "text": "x = π/6 + kπ", "isCorrect": false },
+      { "label": "D", "text": "x = π/4 + 2kπ", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Phương trình lượng giác",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Cấp số cộng có số hạng đầu u₁ = 3 và công sai d = 4. Số hạng thứ 5 là:",
+    "options": [
+      { "label": "A", "text": "19", "isCorrect": true },
+      { "label": "B", "text": "23", "isCorrect": false },
+      { "label": "C", "text": "15", "isCorrect": false },
+      { "label": "D", "text": "16", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Dãy số – Cấp số cộng – Cấp số nhân",
+    "gradeNumber": 11,
+    "explanation": "u₅ = u₁ + 4d = 3 + 16 = 19."
+  },
+  {
+    "content": "Cấp số nhân có u₁ = 2 và công bội q = 3. Tổng 4 số hạng đầu là:",
+    "options": [
+      { "label": "A", "text": "80", "isCorrect": true },
+      { "label": "B", "text": "60", "isCorrect": false },
+      { "label": "C", "text": "40", "isCorrect": false },
+      { "label": "D", "text": "162", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Dãy số – Cấp số cộng – Cấp số nhân",
+    "gradeNumber": 11,
+    "explanation": "S₄ = u₁(q⁴-1)/(q-1) = 2(81-1)/2 = 80."
+  },
+  {
+    "content": "Ứng dụng đạo hàm: Hàm số y = x³ - 6x² + 9x + 1 đồng biến trên khoảng nào?",
+    "options": [
+      { "label": "A", "text": "(-∞; 1) và (3; +∞)", "isCorrect": true },
+      { "label": "B", "text": "(1; 3)", "isCorrect": false },
+      { "label": "C", "text": "(-∞; 3)", "isCorrect": false },
+      { "label": "D", "text": "(1; +∞)", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Ứng dụng đạo hàm",
+    "gradeNumber": 12,
+    "explanation": "y' = 3x² - 12x + 9 = 3(x-1)(x-3). y' > 0 khi x < 1 hoặc x > 3."
+  },
+  {
+    "content": "Nguyên hàm của f(x) = 2x + 3 là:",
+    "options": [
+      { "label": "A", "text": "x² + 3x + C", "isCorrect": true },
+      { "label": "B", "text": "2x² + 3x + C", "isCorrect": false },
+      { "label": "C", "text": "x² + 3 + C", "isCorrect": false },
+      { "label": "D", "text": "2 + C", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Nguyên hàm",
+    "gradeNumber": 12
+  },
+  {
+    "content": "Tích phân ∫₀¹ (3x² + 2x) dx bằng:",
+    "options": [
+      { "label": "A", "text": "2", "isCorrect": true },
+      { "label": "B", "text": "3", "isCorrect": false },
+      { "label": "C", "text": "1", "isCorrect": false },
+      { "label": "D", "text": "5", "isCorrect": false }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Toán",
+    "topic": "Tích phân",
+    "gradeNumber": 12,
+    "explanation": "∫₀¹ (3x²+2x)dx = [x³+x²]₀¹ = 1+1 = 2."
+  },
+  {
+    "content": "log₂(32) bằng:",
+    "options": [
+      { "label": "A", "text": "5", "isCorrect": true },
+      { "label": "B", "text": "4", "isCorrect": false },
+      { "label": "C", "text": "6", "isCorrect": false },
+      { "label": "D", "text": "16", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Hàm số mũ và logarit",
+    "gradeNumber": 12,
+    "explanation": "2⁵ = 32 nên log₂(32) = 5."
+  },
+  {
+    "content": "Phương trình 2^x = 16 có nghiệm là:",
+    "options": [
+      { "label": "A", "text": "x = 4", "isCorrect": true },
+      { "label": "B", "text": "x = 8", "isCorrect": false },
+      { "label": "C", "text": "x = 2", "isCorrect": false },
+      { "label": "D", "text": "x = 3", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Hàm số mũ và logarit",
+    "gradeNumber": 12,
+    "explanation": "2^x = 2⁴ → x = 4."
+  },
+  {
+    "content": "Số phức z = 3 + 4i có môđun bằng:",
+    "options": [
+      { "label": "A", "text": "5", "isCorrect": true },
+      { "label": "B", "text": "7", "isCorrect": false },
+      { "label": "C", "text": "√7", "isCorrect": false },
+      { "label": "D", "text": "25", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Số phức",
+    "gradeNumber": 12,
+    "explanation": "|z| = √(3² + 4²) = √25 = 5."
+  },
+  {
+    "content": "Số phức liên hợp của z = 2 - 3i là:",
+    "options": [
+      { "label": "A", "text": "2 + 3i", "isCorrect": true },
+      { "label": "B", "text": "-2 + 3i", "isCorrect": false },
+      { "label": "C", "text": "-2 - 3i", "isCorrect": false },
+      { "label": "D", "text": "3 - 2i", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Số phức",
+    "gradeNumber": 12
+  },
+  {
+    "content": "Thể tích khối hộp chữ nhật có ba kích thước 3, 4, 5 là:",
+    "options": [
+      { "label": "A", "text": "60", "isCorrect": true },
+      { "label": "B", "text": "47", "isCorrect": false },
+      { "label": "C", "text": "120", "isCorrect": false },
+      { "label": "D", "text": "30", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Khối đa diện",
+    "gradeNumber": 12,
+    "explanation": "V = 3 × 4 × 5 = 60."
+  },
+  {
+    "content": "Thể tích khối cầu có bán kính r = 3 là:",
+    "options": [
+      { "label": "A", "text": "36π", "isCorrect": true },
+      { "label": "B", "text": "27π", "isCorrect": false },
+      { "label": "C", "text": "12π", "isCorrect": false },
+      { "label": "D", "text": "9π", "isCorrect": false }
+    ],
+    "difficulty": "EASY",
+    "subject": "Toán",
+    "topic": "Mặt cầu – Mặt trụ – Mặt nón",
+    "gradeNumber": 12,
+    "explanation": "V = (4/3)πr³ = (4/3)π·27 = 36π."
+  }
+]

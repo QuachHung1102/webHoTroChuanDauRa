@@ -1,0 +1,395 @@
+import { prisma } from "@/lib/db/prisma";
+
+// ── Dashboard stats ──────────────────────────────────────────
+export async function getAdminStats() {
+  const [teacherCount, studentCount, questionCount, examCount, classCount, topicCount] = await Promise.all([
+    prisma.user.count({ where: { role: "TEACHER" } }),
+    prisma.user.count({ where: { role: "STUDENT" } }),
+    prisma.question.count(),
+    prisma.exam.count(),
+    prisma.class.count(),
+    prisma.topic.count(),
+  ]);
+  return { teacherCount, studentCount, questionCount, examCount, classCount, topicCount };
+}
+
+// ── Subjects with canAddQuestions ───────────────────────────
+export async function getAdminSubjects() {
+  return prisma.subject.findMany({
+    orderBy: { name: "asc" },
+    include: {
+      _count: { select: { questions: true } },
+    },
+  });
+}
+
+// ── All questions (paginated) ────────────────────────────────
+export async function getAdminQuestions(filters?: {
+  subjectId?: string;
+  difficulty?: string;
+  status?: string;
+  search?: string;
+  page?: number;
+  pageSize?: number;
+}) {
+  const page = filters?.page ?? 1;
+  const pageSize = filters?.pageSize ?? 15;
+  const skip = (page - 1) * pageSize;
+
+  const where = {
+    ...(filters?.subjectId ? { subjectId: filters.subjectId } : {}),
+    ...(filters?.difficulty ? { difficulty: filters.difficulty as "EASY" | "MEDIUM" | "HARD" } : {}),
+    ...(filters?.status ? { status: filters.status as "PENDING" | "APPROVED" } : {}),
+    ...(filters?.search
+      ? { content: { contains: filters.search, mode: "insensitive" as const } }
+      : {}),
+  };
+
+  const [questions, total] = await Promise.all([
+    prisma.question.findMany({
+      where,
+      orderBy: { createdAt: "desc" },
+      skip,
+      take: pageSize,
+      include: {
+        subject: { select: { name: true } },
+        topic: { select: { name: true } },
+        createdBy: { select: { name: true } },
+      },
+    }),
+    prisma.question.count({ where }),
+  ]);
+
+  return { questions, total };
+}
+
+// ── Grades (for create question form) ───────────────────────
+export async function getAdminGrades() {
+  return prisma.grade.findMany({ orderBy: { gradeNumber: "asc" } });
+}
+
+// ── High-school grades only (10–12) ──────────────────────────
+export async function getAdminHighSchoolGrades() {
+  return prisma.grade.findMany({
+    where: { level: "HIGH" },
+    orderBy: { gradeNumber: "asc" },
+  });
+}
+
+// ── Topics for subject+grade ─────────────────────────────────
+export async function getAdminTopics(subjectId: string, gradeId: string) {
+  return prisma.topic.findMany({
+    where: { subjectId, gradeId },
+    orderBy: { name: "asc" },
+  });
+}
+
+// ── All users (paginated) ────────────────────────────────────
+export async function getAdminUsers(filters?: {
+  role?: "TEACHER" | "STUDENT";
+  search?: string;
+  page?: number;
+  pageSize?: number;
+}) {
+  const page = filters?.page ?? 1;
+  const pageSize = filters?.pageSize ?? 20;
+  const skip = (page - 1) * pageSize;
+
+  const where = {
+    role: { in: ["TEACHER", "STUDENT"] as ("TEACHER" | "STUDENT")[] },
+    ...(filters?.role ? { role: filters.role } : {}),
+    ...(filters?.search
+      ? {
+          OR: [
+            { name: { contains: filters.search, mode: "insensitive" as const } },
+            { email: { contains: filters.search, mode: "insensitive" as const } },
+          ],
+        }
+      : {}),
+  };
+
+  const [users, total] = await Promise.all([
+    prisma.user.findMany({
+      where,
+      orderBy: [{ role: "asc" }, { name: "asc" }],
+      skip,
+      take: pageSize,
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        role: true,
+        sex: true,
+        phoneNumber: true,
+        createdAt: true,
+        studentClasses: {
+          select: { class: { select: { name: true } } },
+          take: 1,
+        },
+        teacherClasses: {
+          select: { subject: { select: { name: true } } },
+          distinct: ["subjectId"],
+        },
+      },
+    }),
+    prisma.user.count({ where }),
+  ]);
+
+  return { users, total };
+}
+
+// ── All teachers (for dropdowns) ────────────────────────────
+export async function getAdminTeachers(): Promise<{
+  id: string;
+  name: string;
+  email: string;
+  subjects: { id: string; name: string }[];
+}[]> {
+  const teachers = await prisma.user.findMany({
+    where: { role: "TEACHER" },
+    orderBy: { name: "asc" },
+    select: {
+      id: true,
+      name: true,
+      email: true,
+      teacherClasses: {
+        select: { subjectId: true, subject: { select: { id: true, name: true } } },
+      },
+    },
+  });
+  return teachers.map((t) => {
+    const seen = new Set<string>();
+    const subjects: { id: string; name: string }[] = [];
+    for (const tc of t.teacherClasses) {
+      if (!seen.has(tc.subjectId)) {
+        seen.add(tc.subjectId);
+        subjects.push(tc.subject);
+      }
+    }
+    return { id: t.id, name: t.name, email: t.email, subjects };
+  });
+}
+
+// ── All students (for dropdowns) ────────────────────────────
+export async function getAdminStudents(search?: string) {
+  return prisma.user.findMany({
+    where: {
+      role: "STUDENT",
+      ...(search
+        ? {
+            OR: [
+              { name: { contains: search, mode: "insensitive" } },
+              { email: { contains: search, mode: "insensitive" } },
+            ],
+          }
+        : {}),
+    },
+    orderBy: { name: "asc" },
+    take: 50,
+    select: {
+      id: true, name: true, email: true,
+      studentClasses: { select: { class: { select: { id: true, name: true } } } },
+    },
+  });
+}
+
+// ── All classes (grouped by grade) ──────────────────────────
+export async function getAdminClasses() {
+  return prisma.class.findMany({
+    orderBy: [{ grade: { gradeNumber: "asc" } }, { name: "asc" }],
+    include: {
+      grade: { select: { gradeNumber: true, level: true } },
+      _count: {
+        select: { studentClasses: true, teacherClasses: true },
+      },
+    },
+  });
+}
+
+// ── Class detail ─────────────────────────────────────────────
+export async function getAdminClassDetail(classId: string) {
+  return prisma.class.findUnique({
+    where: { id: classId },
+    include: {
+      grade: true,
+      studentClasses: {
+        include: {
+          student: {
+            select: { id: true, name: true, email: true, sex: true, phoneNumber: true },
+          },
+        },
+        orderBy: { student: { name: "asc" } },
+      },
+      teacherClasses: {
+        include: {
+          teacher: { select: { id: true, name: true, email: true } },
+          subject: { select: { id: true, name: true } },
+        },
+        orderBy: { subject: { name: "asc" } },
+      },
+    },
+  });
+}
+
+// ── Teacher permissions overview ─────────────────────────────
+export async function getAdminTeacherPermissions(): Promise<{
+  id: string;
+  name: string;
+  email: string;
+  subjects: { id: string; name: string }[];
+  teacherClasses: {
+    class: { id: string; name: string };
+    subject: { id: string; name: string };
+  }[];
+}[]> {
+  const teachers = await prisma.user.findMany({
+    where: { role: "TEACHER" },
+    orderBy: { name: "asc" },
+    select: {
+      id: true,
+      name: true,
+      email: true,
+      teacherClasses: {
+        select: {
+          subjectId: true,
+          class: { select: { id: true, name: true } },
+          subject: { select: { id: true, name: true } },
+        },
+        orderBy: [{ subject: { name: "asc" } }, { class: { name: "asc" } }],
+      },
+    },
+  });
+  return teachers.map((t) => {
+    const seen = new Set<string>();
+    const subjects: { id: string; name: string }[] = [];
+    for (const tc of t.teacherClasses) {
+      if (!seen.has(tc.subjectId)) {
+        seen.add(tc.subjectId);
+        subjects.push(tc.subject);
+      }
+    }
+    return { id: t.id, name: t.name, email: t.email, subjects, teacherClasses: t.teacherClasses };
+  });
+}
+
+// ── User detail (for edit page) ───────────────────────────────
+export async function getAdminUserDetail(userId: string) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return (prisma.user as any).findUnique({
+    where: { id: userId },
+    select: {
+      id: true,
+      name: true,
+      email: true,
+      role: true,
+      sex: true,
+      phoneNumber: true,
+      address: true,
+      dateOfBirth: true,
+      createdAt: true,
+      studentClasses: {
+        select: { class: { select: { id: true, name: true, grade: { select: { gradeNumber: true } } } } },
+      },
+      teacherClasses: {
+        select: {
+          subjectId: true,
+          subject: { select: { name: true } },
+          class: { select: { id: true, name: true } },
+        },
+        orderBy: [{ subject: { name: "asc" } }],
+      },
+    },
+  }) as Promise<{
+    id: string;
+    name: string;
+    email: string;
+    role: string;
+    sex: string | null;
+    phoneNumber: string | null;
+    address: string | null;
+    dateOfBirth: Date | null;
+    createdAt: Date;
+    studentClasses: { class: { id: string; name: string; grade: { gradeNumber: number } } }[];
+    teacherClasses: { subjectId: string; subject: { name: string }; class: { id: string; name: string } }[];
+  } | null>;
+}
+
+// ── Topics for subjects page (grouped by grade) ──────────────
+export async function getAdminSubjectsWithTopics() {
+  return prisma.subject.findMany({
+    orderBy: { name: "asc" },
+    include: {
+      _count: { select: { questions: true } },
+      topics: {
+        orderBy: [{ grade: { gradeNumber: "asc" } }, { name: "asc" }],
+        include: {
+          grade: { select: { gradeNumber: true } },
+          _count: { select: { questions: true } },
+        },
+      },
+    },
+  });
+}
+
+// ── All exams (admin overview) ───────────────────────────────
+export async function getAdminExams(filters?: {
+  subjectId?: string;
+  search?: string;
+  page?: number;
+  pageSize?: number;
+}) {
+  const page = filters?.page ?? 1;
+  const pageSize = filters?.pageSize ?? 20;
+  const skip = (page - 1) * pageSize;
+
+  const where = {
+    ...(filters?.subjectId ? { subjectId: filters.subjectId } : {}),
+    ...(filters?.search
+      ? {
+          OR: [
+            { title: { contains: filters.search, mode: "insensitive" as const } },
+            { createdBy: { name: { contains: filters.search, mode: "insensitive" as const } } },
+          ],
+        }
+      : {}),
+  };
+
+  const [exams, total] = await Promise.all([
+    prisma.exam.findMany({
+      where,
+      orderBy: { createdAt: "desc" },
+      skip,
+      take: pageSize,
+      include: {
+        subject: { select: { name: true } },
+        class: { select: { name: true, grade: { select: { gradeNumber: true } } } },
+        createdBy: { select: { name: true } },
+        _count: { select: { examQuestions: true, examAttempts: true } },
+      },
+    }),
+    prisma.exam.count({ where }),
+  ]);
+
+  return { exams, total };
+}
+
+// ── Exam detail (admin) ───────────────────────────────────────
+export async function getAdminExamDetail(examId: string) {
+  return prisma.exam.findUnique({
+    where: { id: examId },
+    include: {
+      subject: true,
+      class: { include: { grade: true } },
+      createdBy: { select: { id: true, name: true, email: true } },
+      examQuestions: {
+        orderBy: { order: "asc" },
+        include: {
+          question: {
+            include: { topic: true },
+          },
+        },
+      },
+      _count: { select: { examAttempts: true } },
+    },
+  });
+}

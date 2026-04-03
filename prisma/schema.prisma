@@ -1,0 +1,282 @@
+// EduAssess — Prisma Schema
+// Docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Enums ───────────────────────────────────────────────────
+
+enum Role {
+  ADMIN
+  TEACHER
+  STUDENT
+}
+
+enum SchoolLevel {
+  PRIMARY   // Tiểu học (1–5)
+  MIDDLE    // THCS (6–9)
+  HIGH      // THPT (10–12)
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+enum QuestionStatus {
+  PENDING   // AI gợi ý, chờ giáo viên duyệt
+  APPROVED  // Đã được giáo viên approve
+}
+
+// ─── Users ───────────────────────────────────────────────────
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      Role     @default(STUDENT)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  teacherClasses  TeacherClass[]
+  studentClasses  StudentClass[]
+  questionsCreated Question[]
+  examsCreated    Exam[]
+  examAttempts    ExamAttempt[]
+  flashcardSets   FlashcardSet[]
+  flashcardSessions FlashcardSession[]
+
+  @@map("users")
+}
+
+// ─── Subject & Grade ─────────────────────────────────────────
+
+model Subject {
+  id   String @id @default(cuid())
+  name String @unique // Toán, Vật lý, Hóa học, Sinh học...
+
+  topics    Topic[]
+  questions Question[]
+  exams     Exam[]
+  TeacherClass TeacherClass[]
+  FlashcardSet FlashcardSet[]
+
+  @@map("subjects")
+}
+
+model Grade {
+  id          String      @id @default(cuid())
+  level       SchoolLevel
+  gradeNumber Int         // 1–12
+
+  topics   Topic[]
+  classes  Class[]
+
+  @@unique([level, gradeNumber])
+  @@map("grades")
+}
+
+// ─── Topic (Chủ đề) ──────────────────────────────────────────
+
+model Topic {
+  id        String  @id @default(cuid())
+  name      String
+  subjectId String
+  gradeId   String
+
+  subject   Subject    @relation(fields: [subjectId], references: [id])
+  grade     Grade      @relation(fields: [gradeId], references: [id])
+  questions Question[]
+
+  @@map("topics")
+}
+
+// ─── Questions ───────────────────────────────────────────────
+
+model Question {
+  id          String         @id @default(cuid())
+  content     String
+  options     Json           // [{text: string, isCorrect: boolean}]
+  explanation String?
+  difficulty  Difficulty
+  status      QuestionStatus @default(PENDING)
+  isUnivExam  Boolean        @default(false) // Dùng ôn thi ĐH (khối 12)
+  topicId     String
+  subjectId   String
+  createdById String
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  topic     Topic    @relation(fields: [topicId], references: [id])
+  subject   Subject  @relation(fields: [subjectId], references: [id])
+  createdBy User     @relation(fields: [createdById], references: [id])
+
+  examQuestions    ExamQuestion[]
+  flashcardItems   FlashcardItem[]
+  examAnswers      ExamAnswer[]
+
+  @@map("questions")
+}
+
+// ─── Classes ─────────────────────────────────────────────────
+
+model Class {
+  id      String @id @default(cuid())
+  name    String // VD: "10A1", "11B2"
+  gradeId String
+
+  grade          Grade          @relation(fields: [gradeId], references: [id])
+  teacherClasses TeacherClass[]
+  studentClasses StudentClass[]
+  exams          Exam[]
+  flashcardSets  FlashcardSet[]
+
+  @@map("classes")
+}
+
+// Phân quyền: giáo viên dạy môn nào ở lớp nào
+model TeacherClass {
+  teacherId String
+  classId   String
+  subjectId String
+
+  teacher User    @relation(fields: [teacherId], references: [id])
+  class   Class   @relation(fields: [classId], references: [id])
+  subject Subject @relation(fields: [subjectId], references: [id])
+
+  @@id([teacherId, classId, subjectId])
+  @@map("teacher_classes")
+}
+
+// Học sinh thuộc lớp nào
+model StudentClass {
+  studentId String
+  classId   String
+
+  student User  @relation(fields: [studentId], references: [id])
+  class   Class @relation(fields: [classId], references: [id])
+
+  @@id([studentId, classId])
+  @@map("student_classes")
+}
+
+// ─── Exams ───────────────────────────────────────────────────
+
+model Exam {
+  id          String  @id @default(cuid())
+  title       String
+  subjectId   String
+  classId     String
+  createdById String
+  duration    Int     // phút
+  showAnswer  Boolean @default(true) // học sinh được xem đáp án sau khi nộp
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  subject   Subject @relation(fields: [subjectId], references: [id])
+  class     Class   @relation(fields: [classId], references: [id])
+  createdBy User    @relation(fields: [createdById], references: [id])
+
+  examQuestions ExamQuestion[]
+  examAttempts  ExamAttempt[]
+
+  @@map("exams")
+}
+
+model ExamQuestion {
+  examId     String
+  questionId String
+  order      Int
+
+  exam     Exam     @relation(fields: [examId], references: [id])
+  question Question @relation(fields: [questionId], references: [id])
+
+  @@id([examId, questionId])
+  @@map("exam_questions")
+}
+
+// ─── Exam Attempts (bài làm của học sinh) ────────────────────
+
+model ExamAttempt {
+  id          String    @id @default(cuid())
+  examId      String
+  studentId   String
+  startedAt   DateTime  @default(now())
+  submittedAt DateTime?
+  score       Float?    // % điểm
+
+  exam    Exam @relation(fields: [examId], references: [id])
+  student User @relation(fields: [studentId], references: [id])
+
+  answers ExamAnswer[]
+
+  @@map("exam_attempts")
+}
+
+model ExamAnswer {
+  id             String  @id @default(cuid())
+  attemptId      String
+  questionId     String
+  selectedOption Int?    // index của đáp án học sinh chọn (0–3)
+  isCorrect      Boolean
+
+  attempt  ExamAttempt @relation(fields: [attemptId], references: [id])
+  question Question    @relation(fields: [questionId], references: [id])
+
+  @@map("exam_answers")
+}
+
+// ─── Flashcards ──────────────────────────────────────────────
+
+model FlashcardSet {
+  id          String   @id @default(cuid())
+  title       String
+  subjectId   String
+  classId     String
+  createdById String
+  createdAt   DateTime @default(now())
+
+  subject   Subject @relation(fields: [subjectId], references: [id])
+  class     Class   @relation(fields: [classId], references: [id])
+  createdBy User    @relation(fields: [createdById], references: [id])
+
+  items    FlashcardItem[]
+  sessions FlashcardSession[]
+
+  @@map("flashcard_sets")
+}
+
+model FlashcardItem {
+  id         String @id @default(cuid())
+  setId      String
+  questionId String
+  order      Int
+
+  set      FlashcardSet @relation(fields: [setId], references: [id])
+  question Question     @relation(fields: [questionId], references: [id])
+
+  @@map("flashcard_items")
+}
+
+model FlashcardSession {
+  id          String    @id @default(cuid())
+  setId       String
+  studentId   String
+  startedAt   DateTime  @default(now())
+  completedAt DateTime?
+
+  set     FlashcardSet @relation(fields: [setId], references: [id])
+  student User         @relation(fields: [studentId], references: [id])
+
+  @@map("flashcard_sessions")
+}
+

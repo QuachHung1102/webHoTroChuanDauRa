@@ -1,0 +1,437 @@
+[
+  {
+    "content": "Đơn vị cấu trúc và chức năng cơ bản của sự sống là:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tế bào",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Phân tử",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mô",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cơ quan",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Tế bào học",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Màng tế bào được cấu tạo chủ yếu từ:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lớp kép phospholipid và protein",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cellulose và pectin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chitin và protein",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Collagen và elastin",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Sinh học",
+    "topic": "Tế bào học",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Bào quan nào sau đây chỉ có ở tế bào thực vật mà không có ở tế bào động vật?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lục lạp",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ty thể",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ribosome",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nhân tế bào",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Tế bào học",
+    "gradeNumber": 10
+  },
+  {
+    "content": "ATP là phân tử dự trữ năng lượng. Khi một nhóm phosphate cuối bị cắt ra sẽ giải phóng năng lượng và tạo thành:",
+    "options": [
+      {
+        "label": "A",
+        "text": "ADP",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "AMP",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "GTP",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "NADH",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Chuyển hóa vật chất và năng lượng trong tế bào",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Quang hợp xảy ra ở bào quan nào?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lục lạp",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ty thể",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Không bào",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bộ máy Golgi",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Chuyển hóa vật chất và năng lượng trong tế bào",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Phương trình tổng quát của quang hợp là:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6CO₂ + 6O₂ → C₆H₁₂O₆ + 6H₂O",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6H₂O + 6O₂ → C₆H₁₂O₆ + 6CO₂",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Chuyển hóa vật chất và năng lượng trong tế bào",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Nguyên phân tạo ra mấy tế bào con từ một tế bào mẹ?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Phân bào",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Giảm phân tạo ra mấy tế bào con và bộ nhiễm sắc thể của các tế bào con như thế nào?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 tế bào con, bộ nhiễm sắc thể đơn bội (n)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 tế bào con, bộ nhiễm sắc thể lưỡng bội (2n)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 tế bào con, bộ nhiễm sắc thể lưỡng bội (2n)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 tế bào con, bộ nhiễm sắc thể đơn bội (n)",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Sinh học",
+    "topic": "Phân bào",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Vi khuẩn là sinh vật:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nhân sơ (prokaryote)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nhân thực (eukaryote)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Không có tế bào",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Đa bào",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Vi sinh vật",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Quá trình nào sau đây không phải là hình thức sinh sản ở vi khuẩn?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thụ tinh",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Phân đôi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nảy chồi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tạo bào tử",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Sinh học",
+    "topic": "Vi sinh vật",
+    "gradeNumber": 10
+  },
+  {
+    "content": "Quá trình hút nước của cây chủ yếu diễn ra theo cơ chế:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thẩm thấu",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Khuếch tán",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vận chuyển chủ động",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nhập bào",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "MEDIUM",
+    "subject": "Sinh học",
+    "topic": "Chuyển hóa vật chất và năng lượng ở thực vật",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Con đường vận chuyển nước từ rễ lên lá qua:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mạch gỗ (xylem)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mạch libe (phloem)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tế bào biểu bì",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tế bào mô khuyết",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Chuyển hóa vật chất và năng lượng ở thực vật",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Tim người gồm mấy ngăn?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 ngăn",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 ngăn",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 ngăn",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6 ngăn",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Chuyển hóa vật chất và năng lượng ở động vật",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Hình thức sinh sản nào sau đây là vô tính ở thực vật?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Giâm cành",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Thụ phấn chéo",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thụ tinh",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nảy mầm từ hạt",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Sinh sản ở thực vật",
+    "gradeNumber": 11
+  },
+  {
+    "content": "Thụ tinh trong ở động vật nghĩa là:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Trứng được thụ tinh bên trong cơ thể mẹ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Trứng được thụ tinh bên ngoài môi trường nước",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Không cần tinh trùng",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tế bào trứng tự phân chia",
+        "isCorrect": false
+      }
+    ],
+    "difficulty": "EASY",
+    "subject": "Sinh học",
+    "topic": "Sinh sản ở động vật",
+    "gradeNumber": 11
+  }
+]

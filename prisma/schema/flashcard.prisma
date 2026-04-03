@@ -1,0 +1,46 @@
+// ─── Flashcard (Ôn tập) ───────────────────────────────────────
+
+model FlashcardSet {
+  id          String   @id @default(cuid())
+  title       String
+  subjectId   String
+  classId     String
+  createdById String
+  createdAt   DateTime @default(now())
+
+  subject   Subject @relation(fields: [subjectId], references: [id])
+  class     Class   @relation(fields: [classId], references: [id])
+  createdBy User    @relation(fields: [createdById], references: [id])
+
+  items    FlashcardItem[]
+  sessions FlashcardSession[]
+
+  @@map("flashcard_sets")
+}
+
+// Các câu hỏi trong bộ flashcard (kèm thứ tự)
+model FlashcardItem {
+  id         String @id @default(cuid())
+  setId      String
+  questionId String
+  order      Int
+
+  set      FlashcardSet @relation(fields: [setId], references: [id])
+  question Question     @relation(fields: [questionId], references: [id])
+
+  @@map("flashcard_items")
+}
+
+// Phiên ôn tập của học sinh
+model FlashcardSession {
+  id          String    @id @default(cuid())
+  setId       String
+  studentId   String
+  startedAt   DateTime  @default(now())
+  completedAt DateTime? // NULL = chưa hoàn thành
+
+  set     FlashcardSet @relation(fields: [setId], references: [id])
+  student User         @relation(fields: [studentId], references: [id])
+
+  @@map("flashcard_sessions")
+}
