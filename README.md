@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EduAssess
 
-## Getting Started
+## Development
 
-First, run the development server:
+Run the app locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Useful database commands:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run db:migrate
+npm run db:seed
+npm run db:studio
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+This project follows a split between framework entrypoints and feature logic:
 
-To learn more about Next.js, take a look at the following resources:
+- `app/`: Next.js App Router pages, layouts, and API routes.
+- `auth.ts`: root NextAuth entrypoint required by the app.
+- `proxy.ts`: root Next.js proxy entrypoint required by Next 16.
+- `lib/auth/`: auth configuration, access rules, and reusable auth helpers.
+- `lib/proxy/`: request guard logic used by `proxy.ts`.
+- `lib/db/`: database client setup.
+- `lib/actions/`: server actions invoked from forms and UI.
+- `prisma/schema/`: split Prisma schema files by domain.
+- `types/`: global type augmentation files.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Conventions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Keep Next.js convention files such as `proxy.ts`, `auth.ts`, `app/layout.tsx`, and route files where the framework expects them.
+- Put business logic in `lib/` folders, then import it into those convention files.
+- Group code by domain first when possible, for example `lib/auth`, `lib/db`, `lib/proxy`, instead of a flat `utils` folder.
+- Keep Prisma models split by domain inside `prisma/schema/` instead of one large schema file.
 
-## Deploy on Vercel
+## Next Refactor Targets
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The next cleanup steps that will improve maintainability most are:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Move `lib/actions/auth.ts` and `lib/actions/register.ts` into `lib/auth/actions/`.
+2. Extract dashboard navigation config from `app/(dashboard)/layout.tsx` into `lib/navigation/`.
+3. Group teacher, student, and admin UI constants/components by feature instead of keeping everything inline in page files.
+# webHoTroChuanDauRa
